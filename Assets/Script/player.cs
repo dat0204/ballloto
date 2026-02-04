@@ -58,8 +58,7 @@ public class player : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy") && count < 7)
         {
-            Destroy(gameObject);
-            loseObject.gameObject.SetActive(true);
+            SceneManager.LoadScene("Losescene");
         }
     }
 }
